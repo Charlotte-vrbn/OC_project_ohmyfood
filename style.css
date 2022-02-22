@@ -2,28 +2,40 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: #9356dc;
     z-index: 9999;
-    opacity: 0.7;
+    opacity: 0.9;
+    animation: loaderspin 3s forwards;
 }
 
 .loader_content {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     font-family: "Shrikhand";
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-    border-top: solid #9356dc 4px;
+    border-top: solid #ff79da 4px;
     border-bottom: solid #ff79da 4px;
     border-left: solid #99e2d0 2px;
     border-right: solid #99e2d0 2px;
-    border-radius: 25px;
+    border-radius: 35px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@keyframes loaderspin {
+    0% {
+        opacity: 0.9;
+        z-index: 9999;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
 }
 
 header {
