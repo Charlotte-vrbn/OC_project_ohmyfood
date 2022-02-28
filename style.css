@@ -172,10 +172,6 @@ li#savour {
     box-shadow: 0 2px 10px #c3c3c3;
 }
 
-#restaurants article:hover {
-    box-shadow: 0 2px 10px #9356dc;
-}
-
 #restaurants img {
     object-fit: cover;
     height: calc(100% - 75px);
